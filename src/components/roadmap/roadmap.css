@@ -64,3 +64,10 @@
   content: "";
   top: 5px;
 }
+
+@media only screen and (max-width: 640px) {
+  .timeline {
+    margin-right: 20px;
+    max-width: 40%;
+  }
+}

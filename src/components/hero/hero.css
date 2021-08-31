@@ -1,5 +1,6 @@
 #web-hero img {
   width: 350px;
+  max-width: 100%;
 }
 #web-hero {
   padding-top: 4em;
@@ -84,6 +85,10 @@ code {
 
 @media only screen and (max-width: 640px) {
   .navbar__menu-item {
-    font-size: 2.4em;
+    font-size: 2em;
+  }
+  .navbar__menu-item-title {
+    color: white;
+    opacity: 0.65;
   }
 }
