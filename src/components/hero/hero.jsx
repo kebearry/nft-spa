@@ -24,8 +24,8 @@ function Hero() {
         <aside>
           <small>Note</small>
           <p>
-            We're more than <code>just baos</code> that are cute. We are baos{" "}
-            <code>with feelings (fillings)</code>. Treat us seriously, please!!!
+            We're more than <code>just baos</code> that are cute. We are baos
+            with<code>feelings(fillings).</code>Treat us seriously, please!!!
           </p>
         </aside>
       </div>
