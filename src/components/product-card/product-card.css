@@ -25,13 +25,13 @@
 }
 
 .clash-card__image--barbarian {
-  background: url("https://media.istockphoto.com/vectors/seamless-vector-pattern-with-asian-food-dim-sum-hand-drawn-yang-cha-vector-id1164525546?b=1&k=20&m=1164525546&s=612x612&w=0&h=ewp_XOgAazSwKy9bL1UcZ4BvH_y2-0jc3bzDFWfrIEU=");
+  background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470");
 }
 .clash-card__image--barbarian img {
   width: 400px;
   position: absolute;
   top: -65px;
-  left: -70px;
+  left: -50px;
 }
 
 .clash-card__level {
@@ -76,11 +76,11 @@
   padding: 20px 15px;
 }
 .one-third:first-of-type {
-  background: #FAC898;
+  background: #fac898;
   border-bottom-left-radius: 14px;
 }
 .one-third:nth-of-type(2) {
-  background: #AEC6CF;
+  background: #aec6cf;
 }
 .clash-card__unit-stats sup {
   position: absolute;
