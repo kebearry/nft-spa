@@ -1,6 +1,5 @@
 import * as React from "react";
 import "./footer.css";
-import favicon from "../../assets/favicon.ico";
 
 function Footer() {
   return (
