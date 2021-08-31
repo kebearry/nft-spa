@@ -1,38 +1,67 @@
-.App {
+* {
+  /* font-family: "PT Sans", sans-serif !important; */
+  /* font-family: monospace !important; */
+  transition: all 0.2s ease;
+  line-height: 30px;
+}
+
+html,
+body {
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 64px;
+  text-align: left;
+  padding-bottom: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.page-section {
+  height: 480px;
+  padding: 3em;
+  height: 100%;
+  background: linear-gradient(45deg, #232526 10%, #414345 90%);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.section-container {
+  padding-top: 50px;
+  max-width: 1080px;
+  margin: auto;
+}
+.page-section-container {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 640px) {
+  .page-section-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.page-section.hero {
+  background: #65c3c7;
+}
+#about {
+  background: linear-gradient(#65c3c7, #7590da);
+}
+#gallery {
+  background: linear-gradient(#7590da, #fd9dcb);
+}
+#roadmap {
+  background: linear-gradient(#fd9dcb, #ffe574);
+}
+.page-section.flex {
+  display: flex;
+  justify-content: center;
+}
+
+h1 span {
+  background-color: rgba(255, 229, 116, 0.65);
+  padding: 10px 20px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 1.2em;
 }

@@ -1,0 +1,18 @@
+#web-about .about-text {
+  color: black;
+  text-align: left;
+  max-width: 60%;
+}
+#web-about img {
+  max-width: 40%;
+}
+
+@media only screen and (max-width: 640px) {
+  #web-about .about-text,
+  #web-about img {
+    max-width: 100%;
+  }
+  h1{
+    font-size: 2em;
+  }
+}
