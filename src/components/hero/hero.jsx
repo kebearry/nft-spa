@@ -58,9 +58,19 @@ function Hero() {
             </div>
           </div>
         ) : (
-          <button onClick={connect} className="button">
-            Connect
-          </button>
+          <div>
+            <button onClick={connect} className="button">
+              Connect
+            </button>
+            <div>
+              *Please install{" "}
+              <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=enmetamask">
+                {" "}
+                Metamask extension
+              </a>{" "}
+              for this to work
+            </div>
+          </div>
         )}
       </div>
     </div>
