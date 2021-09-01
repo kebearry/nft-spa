@@ -30,7 +30,7 @@ function Navigation() {
   return (
     <nav className="navigation" id="web-nav">
       <a className="navigation__link" href="#bao">
-        <i class="fa fa-chevron-up"></i>
+        <i className="fa fa-chevron-up"></i>
       </a>
       <a className="navigation__link" href="#about">
         About

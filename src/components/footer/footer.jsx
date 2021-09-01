@@ -29,44 +29,44 @@ function Footer() {
 
   return (
     <div id="web-footer">
-      <div class="container">
-        <div class="social-media-bar">
-          <div class="social-media-icons">
+      <div className="container">
+        <div className="social-media-bar">
+          <div className="social-media-icons">
             <h1>Follow Us</h1>
             <ul>
               <li>
                 <a href="/">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="/">
-                  <i class="fa fa-rss" aria-hidden="true"></i>
+                  <i className="fa fa-rss" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="/">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="/">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  <i className="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="/">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i className="fa fa-facebook" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="/">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <i className="fa fa-envelope-o" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="social-media-subscribe">
+          <div className="social-media-subscribe">
             <h1>Get The Newsletter</h1>
             <form onSubmit={handleSubmit}>
               <input
@@ -74,7 +74,7 @@ function Footer() {
                 name="email"
                 placeholder="Your email address"
               ></input>
-              <input class="button-form" type="submit" value="Subcribe"></input>
+              <input className="button-form" type="submit" value="Subcribe"></input>
             </form>
           </div>
         </div>
