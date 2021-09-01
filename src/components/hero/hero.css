@@ -3,7 +3,7 @@
   max-width: 100%;
 }
 #web-hero {
-  padding-top: 4em;
+  padding-top: 3em;
 }
 .navbar__menu-item {
   text-transform: uppercase;
@@ -81,6 +81,44 @@ code {
   display: inline-block;
   padding: 2px;
   background-color: rgba(20, 177, 171, 0.15);
+}
+
+.buttonContainer {
+  margin-top: 2em;
+  text-align: center;
+}
+
+h1 {
+  color: rgba(69, 69, 69, 1);
+  /* line-height: 2em; */
+}
+
+/* BUTTON CSS
+------------------------------------------- */
+
+button {
+  cursor: pointer;
+  font-size: 64px;
+  display: inline-block;
+  text-decoration: none;
+
+  color: white;
+  background-color: rgb(28, 190, 131);
+  font-weight: 600;
+  border-radius: 70px;
+  box-shadow: 0px 4px 16px rgb(0 0 0 / 15%);
+
+  padding: 44px;
+  margin: 5px;
+
+  background-size: 200% 100%;
+  border: 4px solid white;
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.5s ease 0s, background-color 0.5s ease;
+}
+
+button.disconnected {
+  background-color: rgb(249, 49, 84);
 }
 
 @media only screen and (max-width: 640px) {

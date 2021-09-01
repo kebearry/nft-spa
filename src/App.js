@@ -1,4 +1,6 @@
 import './App.css';
+import { Web3ReactProvider } from '@web3-react/core'
+import Web3 from 'web3'
 import Hero from './components/hero/hero.jsx'
 import About from './components/about/about.jsx'
 import Navigation from './components/navigation/navigation.jsx';
@@ -12,12 +14,16 @@ import happybao from "./assets/happybao.png";
 import indignantbao from './assets/indignantbao.png'
 import bitchbao from './assets/bitchbao.png'
 
-function App() {
+function getLibrary(provider) {
+  return new Web3(provider)
+}
+
+function App(pageProps) {
   return (
-    <div>
+    <Web3ReactProvider getLibrary={getLibrary}>
       <Navigation></Navigation>
       <div className="page-section hero" id="bao">
-        <Hero></Hero>
+        <Hero {...pageProps} ></Hero>
       </div>
       <div className="page-section flex" id="about">
         <About></About>
@@ -36,7 +42,7 @@ function App() {
         <Roadmap></Roadmap>
       </div>
       <Footer></Footer>
-    </div>
+    </Web3ReactProvider>
   );
 }
 

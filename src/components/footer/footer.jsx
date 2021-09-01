@@ -74,7 +74,7 @@ function Footer() {
                 name="email"
                 placeholder="Your email address"
               ></input>
-              <input className="button-form" type="submit" value="Subcribe"></input>
+              <input className="button-form" type="submit" value="Subscribe"></input>
             </form>
           </div>
         </div>

@@ -1,10 +1,24 @@
 import * as React from "react";
+import { useWeb3React } from "@web3-react/core";
+import { injected } from "../connector/connector";
 import awkbao from "../../assets/awkbao.png";
 import crybao from "../../assets/crybao.png";
 import angrybao from "../../assets/angrybao.png";
 import "./hero.css";
 
 function Hero() {
+  const { active, account, activate, deactivate } = useWeb3React();
+  async function connect() {
+    try {
+      await activate(injected);
+    } catch (ex) {}
+  }
+
+  async function disconnect() {
+    try {
+      deactivate();
+    } catch (ex) {}
+  }
   return (
     <div id="web-hero">
       <span className="navbar__menu-item">
@@ -28,6 +42,26 @@ function Hero() {
             with<code>feelings(fillings).</code>Treat us seriously, please!!!
           </p>
         </aside>
+      </div>
+      <div className="buttonContainer">
+        {active ? (
+          <div>
+            <button onClick={disconnect} className="disconnected">
+              Disconnect
+            </button>
+            <div>
+              Connected with{" "}
+              <b>
+                {account.substring(0, 4)}...
+                {account.substring(account.length - 4, account.length)}
+              </b>
+            </div>
+          </div>
+        ) : (
+          <button onClick={connect} className="button">
+            Connect
+          </button>
+        )}
       </div>
     </div>
   );

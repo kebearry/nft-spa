@@ -12,6 +12,7 @@
 
 .social-media-icons h1,
 .social-media-subscribe h1 {
+  color: white;
   font-size: 0.9em;
   line-height: 17px;
   text-transform: uppercase;
@@ -36,7 +37,7 @@
 }
 
 .social-media-icons a:hover {
-  background-color: #ea623d;
+  background-color: #fad121;
 }
 
 i {
@@ -61,21 +62,21 @@ input::placeholder {
 }
 
 input.button-form {
-  background-color: #ea623d;
-  color: #ffffff;
+  background-color: #fad121;
+  color: black;
   padding: 10px 16px;
   line-height: 17px;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border: 2px solid #ea623d;
+  border: 2px solid #fad121;
   border-radius: 3px;
   margin: 0 0 0 13px;
   cursor: pointer;
 }
 
 input.button-form:hover {
-  color: #000000;
+  color: white;
 }
 
 .social-media-icons h1,

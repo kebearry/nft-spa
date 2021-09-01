@@ -7,9 +7,9 @@
 #web-about img {
   max-width: 40%;
   border-radius: 125px;
-  box-shadow: rgba(253, 157, 203, 0.4) 5px 5px,
-    rgba(253, 157, 203, 0.3) 10px 10px, rgba(253, 157, 203, 0.2) 15px 15px,
-    rgba(253, 157, 203, 0.1) 20px 20px, rgba(253, 157, 203, 0.05) 25px 25px;
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px,
+    rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px,
+    rgba(0, 0, 0, 0.05) 25px 25px;
 }
 
 @media only screen and (max-width: 998px) {
