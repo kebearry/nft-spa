@@ -12,7 +12,7 @@
     rgba(253, 157, 203, 0.1) 20px 20px, rgba(253, 157, 203, 0.05) 25px 25px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 998px) {
   #web-about .about-text,
   #web-about img {
     max-width: 100%;
