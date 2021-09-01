@@ -20,6 +20,9 @@
   #web-about .about-text {
     margin-right: 0;
   }
+  #web-about img {
+    border-radius: 100px;
+  }
   h1 {
     font-size: 1.8em;
   }
