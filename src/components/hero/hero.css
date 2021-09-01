@@ -119,6 +119,7 @@ button {
 
 button.disconnected {
   background-color: rgb(249, 49, 84);
+  font-size: 44px;
 }
 
 @media only screen and (max-width: 640px) {

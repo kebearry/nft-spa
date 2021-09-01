@@ -7,16 +7,16 @@ import angrybao from "../../assets/angrybao.png";
 import "./hero.css";
 
 function Hero() {
-  const { active, account, activate, deactivate } = useWeb3React();
+  const { active, account, activate } = useWeb3React();
   async function connect() {
     try {
       await activate(injected);
     } catch (ex) {}
   }
 
-  async function disconnect() {
+  async function redirect() {
     try {
-      deactivate();
+      window.open("https://opensea.io/alucial", "_blank").focus();
     } catch (ex) {}
   }
   return (
@@ -46,8 +46,8 @@ function Hero() {
       <div className="buttonContainer">
         {active ? (
           <div>
-            <button onClick={disconnect} className="disconnected">
-              Disconnect
+            <button className="disconnected" onClick={redirect}>
+              Buy on Opensea
             </button>
             <div>
               Connected with{" "}
