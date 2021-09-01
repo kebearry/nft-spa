@@ -65,3 +65,10 @@ h1 span {
 p {
   font-size: 1.2em;
 }
+
+.swal2-styled.swal2-confirm {
+  background-color: #317691 !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  box-shadow: none !important;
+}

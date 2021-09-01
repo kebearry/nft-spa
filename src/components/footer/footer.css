@@ -1,48 +1,125 @@
-#lab_social_icon_footer {
-  padding: 40px 0;
+.social-media-bar {
   background-color: #317691;
   color: white;
+  text-align: center;
+  padding: 1px 0 30px 0;
 }
 
-#lab_social_icon_footer a {
-  color: white;
+.social-media-icons li {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#lab_social_icon_footer .social:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+.social-media-icons h1,
+.social-media-subscribe h1 {
+  font-size: 0.9em;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  padding: 15px;
 }
 
-#lab_social_icon_footer .social {
-  transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
-
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-/*
-      Multicoloured Hover Variations
-  */
-
-#lab_social_icon_footer #social-fb:hover {
-  color: #4267b2;
+.social-media-icons li {
+  display: inline-block;
+  margin: 5px;
 }
 
-#lab_social_icon_footer #social-tw:hover {
-  color: #1da1f2;
+.social-media-icons a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #5b7285;
+  border-radius: 50px;
 }
 
-#lab_social_icon_footer #social-gp:hover {
-  color: #db4a39;
+.social-media-icons a:hover {
+  background-color: #ea623d;
 }
 
-#lab_social_icon_footer #social-em:hover {
-  color: #0677ce;
+i {
+  color: #ffffff;
+}
+
+.social-media-subscribe form input[type="email"] {
+  background-color: #324f66;
+  padding: 10px;
+  border: 2px solid #8495a3;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 17px;
+  margin-bottom: 15px;
+}
+
+input::placeholder {
+  color: #8495a3;
+  font-size: 0.8em;
+  line-height: 17px;
+}
+
+input.button-form {
+  background-color: #ea623d;
+  color: #ffffff;
+  padding: 10px 16px;
+  line-height: 17px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 2px solid #ea623d;
+  border-radius: 3px;
+  margin: 0 0 0 13px;
+  cursor: pointer;
+}
+
+input.button-form:hover {
+  color: #000000;
+}
+
+.social-media-icons h1,
+.social-media-icons ul,
+.social-media-subscribe h1,
+.social-media-subscribe ul {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+  .social-media-icons ul {
+    padding: 0;
+  }
+  .social-media-subscribe form input[type="email"] {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .social-media-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-media-icons h1 {
+    padding: 20px;
+  }
+
+  .social-media-subscribe {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 0 100px;
+  }
+
+  .social-media-subscribe h1 {
+    text-align: left;
+    width: 25%;
+    padding: 0;
+  }
 }
