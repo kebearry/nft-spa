@@ -27,3 +27,19 @@
     font-size: 1.8em;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  #web-about .about-text {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 998px) {
+  #web-about img {
+    max-width: 35%;
+  }
+  #web-about .about-text {
+    max-width: 65%;
+    margin-right: 20px;
+  }
+}
