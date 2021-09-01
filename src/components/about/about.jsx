@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./about.css";
-import bao from "../../assets/bao.png";
+import baos from "../../assets/baos.png";
 
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
           love at first sight, make that yours.
         </p>
       </div>
-      <img src={bao} alt="bao collection" />
+      <img src={baos} alt="bao collection" />
     </div>
   );
 }
